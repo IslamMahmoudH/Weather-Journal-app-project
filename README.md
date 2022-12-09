@@ -38,7 +38,7 @@ To use this project, first clone the repo on your device using the command below
 
 ```git init```
 
-```git clone https://github.com/ZEXAWY/weather-journal-app.git```
+```git clone https://github.com/IslamMahmoudH/Weather-Journal-app-project.git```
 
 # Usage
 [(Back to top)](#table-of-contents)
@@ -46,7 +46,7 @@ To use this project, first clone the repo on your device using the command below
 <!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 To use this Project just follow the intallation instruction first.
 1. run the server.js file through command line `node server.js`, Please don't forget to to be inside your folder path where you clone the project to.
-2. Open your web browser (like: Google Chrome) then type `localhost:8000` or `127.0.0.1:8000`, the web application should run for you.
+2. Open your web browser (like: Google Chrome) then type `localhost:3000` or `127.0.0.1:3000`, the web application should run for you.
 3. Enter the Zip code for the city you like to know the weather at, and enter how your feel right now.
 4. Press `Generate` button to get the weather for you.
     
@@ -61,8 +61,8 @@ The ```website``` folder contain the ```app.js``` file, the ```index.html``` fil
 Mainly, You are going to work with only two files which are the `server.js` and the `app.js` files only, the first one is resonsible for the server side code, and the other one is responsible for the client side code.
 
 1. In the `server.js` file there is 3 main funciton:
-    - the first one is `listening` function and it's used to run the server at specific port (The port i used is `8000`).
-    - the second one is `arrow function` used inside the `app.get()` method, and it's used to get data from the client side code at ```url: '/getData'```.
+    - the first one is `listening` function and it's used to run the server at specific port (The port i used is `3000`).
+    - the second one is `arrow function` used inside the `app.get()` method, and it's used to get data from the client side code at ```url: '/all'```.
     - The third one is `arrow funtion` used inside the `app.post()` method, and it's used to to post data to to created project object `projectData` we created before.
     Note that the `arrow function` used in `app.get()` and `app.post()` used two Parameters. `(req, res)` where `req` stands for `required` and `res` stands for   `response`. and both `arrow function` send the data back to the `projectData` objected created at line `2` in the code.
 
@@ -80,7 +80,7 @@ Mainly, You are going to work with only two files which are the `server.js` and 
         - The first one is the `generateData` function which `fetch` data from the `fullUrl`, to get the `fullURL` we had to build it after the user enter his zip code so we had to wait for that, and the we concatenate the whole `url` variables together into one single `fullURL` variable. so that function will be `async` function that needs to `await` for `fetch` the required data to build the `fullUrl`.
         - `.then()` the second function is used to post data after `fetch` data from the 'url` we defined in the `server.js` file using the `app.post()`.
         - `.then()` the third function is used to display to the user on the website, using the `projectData` object where we saved the data we collected. 
-        - `.then()` scroll into the `div` who's responsible for displaying the results using `.scrollIntoView()`
+        
 
     
 # Contribute
@@ -93,7 +93,7 @@ i only implement some function to make it based on a server code, and some funct
 ### Sponsor
 [(Back to top)](#table-of-contents)
 
-This only a project code, so if you like my code feel free to contact me trough my [Email](freedomblackknights@gmail.com).
+This only a project code, so if you like my code feel free to contact me trough my [Email](eslam77712@gmail.com)
 
 all credit for the source code goes to [udacity.com](https://www.udacity.com/) for providing the starting code and the guidance to build this applicaiton.
 
