@@ -4,11 +4,16 @@ body{
 }
 
 #app{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:auto;
-    background: grey;
+    /* background: grey; */
     color: black;
     justify-content: center;
     grid-gap: 1em;
@@ -17,9 +22,11 @@ body{
 }
 
 #holder{
+    color: white;
     margin-top: 1px;
 }
 #zip{
+    color: white;
     margin-bottom: 7%;
     
 
@@ -28,6 +35,7 @@ body{
     
 }
 .Generate{
+    color: #5d8321;
     margin-top:12%;
     
 }
@@ -58,6 +66,7 @@ body{
 
 }
 .title{
+    color: gray;
     margin-top: 5%;
     text-align: center;
     opacity: 0.5;
@@ -106,7 +115,9 @@ button{
     
 }
 h1{
+    
     font-size: 36px;
+    text-align: center;
 }
 
 textarea{
